@@ -24,7 +24,7 @@
 </div>
 <div class="container"  id="div2">
     <div class="well">
-        <h1>hello boys</h1>
+        <h1 id="hello">hello boys</h1>
         <p>hello everyone hello everyone hello everyone hello everyone hello everyone hello everyone
             hello everyone hello everyone hello everyone hello everyone hello everyone hello everyone
             hello everyone hello everyone hello everyone hello everyone hello everyone hello everyone</p>
@@ -38,6 +38,9 @@
             $('h1').addClass("well");
             //$('h1').hide();
             $('#div2').show();
+        });
+        $('#hello').click(function(){
+            $('#div2').animate({'margin-top':'200px','margin-left':'100px'},2000);
         });
     });
 </script>
