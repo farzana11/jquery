@@ -29,12 +29,12 @@
 $(document).ready(function() {
     var i=1;
     $('#button').click(function() {
-        i++;
-
-        var url='image'+i+'.jpg';
-        $('#frameimg').attr('src', url);
-        if(i==5)
-        {i=0;}
+        setInterval(function(){
+            i++;
+            var url='image'+i+'.jpg';
+            $('#frameimg').attr('src', url);
+            if(i==5) {i=0;}
+            }, 1500);
     });
 })
 </script>
